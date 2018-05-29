@@ -1,5 +1,6 @@
 package com.example.david.minim2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -28,6 +29,9 @@ public class Peticiones extends AppCompatActivity {
         ProgressBar pb1 = (ProgressBar) findViewById(R.id.indeterminateBar);
         pb1.setVisibility(ProgressBar.VISIBLE);
 
+
+        Intent intentOj = new Intent(Peticiones.this, Listar.class);
+        startActivity(intentOj);
         //al final de la tasca
         pb1.setVisibility(ProgressBar.INVISIBLE);
 
@@ -40,6 +44,9 @@ public class Peticiones extends AppCompatActivity {
         ProgressBar pb1 = (ProgressBar) findViewById(R.id.indeterminateBar);
         pb1.setVisibility(ProgressBar.VISIBLE);
 
+
+        Intent intentOj = new Intent(Peticiones.this, Listar.class);
+        startActivity(intentOj);
         //al final de la tasca
         pb1.setVisibility(ProgressBar.INVISIBLE);
 
@@ -52,6 +59,9 @@ public class Peticiones extends AppCompatActivity {
         ProgressBar pb1 = (ProgressBar) findViewById(R.id.indeterminateBar);
         pb1.setVisibility(ProgressBar.VISIBLE);
 
+
+        Intent intentOj = new Intent(Peticiones.this, Listar.class);
+        startActivity(intentOj);
         //al final de la tasca
         pb1.setVisibility(ProgressBar.INVISIBLE);
 

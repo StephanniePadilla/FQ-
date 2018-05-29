@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                         //al final de la tasca
                         pb1.setVisibility(ProgressBar.INVISIBLE);
 
-                        Intent intentOj = new Intent(MainActivity.this, Operacion_Activity.class);
+                        Intent intentOj = new Intent(MainActivity.this, Peticiones.class);
                         startActivity(intentOj);
                     } else{
                         Log.d("onResponse", "onResponse. Code" + Integer.toString(statusCode));
