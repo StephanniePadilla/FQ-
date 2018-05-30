@@ -28,11 +28,11 @@ public class InstiArrayAdapter extends ArrayAdapter<Instituto> {
         //Picasso.with(super.getContext()).load(u.getAvatar_url()).into((ImageView) convertView.findViewById(R.id.avatar_image));
         //Picasso.with(super.getContext()).load(PONER_AQUI_URL).into((ImageView) convertView.findViewById(R.id.avatar_image));
         TextView et = (TextView)convertView.findViewById(R.id.username_txt);
-        TextView et2 = (TextView)convertView.findViewById(R.id.numOp_txt);
+
 
         et.setText(u.getNombreInstituto()); //cojo los nombres de los institutos
         int x = u.getNumOperacionesTotales();
-        et2.setText(Integer.toString(x));
+
         return convertView;
     }
 }

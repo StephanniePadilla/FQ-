@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home"
+        tools:title="Inicio" />
+    <item
+        android:id="@+id/listLib"
+        android:icon="@android:drawable/ic_menu_search"
+        tools:id="listLib"
+        tools:title="Lista libros" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/title_notifications"
+        tools:id="lib"
+        tools:title="Libro" />
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/title_dashboard"
+        tools:id="newLib"
+        tools:title="Nuevo libro" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/title_notifications"
+        tools:id="about"
+        tools:title="About" />
+
+</menu>

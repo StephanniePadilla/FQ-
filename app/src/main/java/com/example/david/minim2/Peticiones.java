@@ -23,7 +23,8 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class Peticiones extends AppCompatActivity {
 
-    public static final String BASE_URL = "http://147.83.7.206:8080/myapp/";
+    public static final String BASE_URL = "http://api.dsamola.tk/";
+    //public static final String BASE_URL = "http://147.83.7.206:8080/myapp/";
     //public static final String BASE_URL = "http://192.168.42.158:8080/myapp/";
     //public static final String BASE_URL ="http://localhost:8080/myapp/";
     private TrackApi trackServices;

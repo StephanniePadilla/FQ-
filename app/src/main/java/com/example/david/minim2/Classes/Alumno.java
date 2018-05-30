@@ -20,9 +20,6 @@ public class Alumno {
     @Expose
     private int numOperaciones = 0;
 
-    @SerializedName("operacionesMatematicas")
-    @Expose
-    private List<Operacion> operacionesMatematicas = new ArrayList<Operacion>();
 
     public Alumno() {
     }
@@ -33,7 +30,6 @@ public class Alumno {
                 "nombre='" + nombre + '\'' +
                 ", instituto='" + instituto + '\'' +
                 ", numOperaciones=" + numOperaciones +
-                ", operacionesMatematicas=" + operacionesMatematicas +
                 '}';
     }
 
@@ -61,11 +57,4 @@ public class Alumno {
         this.numOperaciones = numOperaciones;
     }
 
-    public List<Operacion> getOperacionesMatematicas() {
-        return operacionesMatematicas;
-    }
-
-    public void setOperacionesMatematicas(List<Operacion> operacionesMatematicas) {
-        this.operacionesMatematicas = operacionesMatematicas;
-    }
 }

@@ -19,8 +19,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".Listar" />
-        <activity android:name=".Operacion_Activity" />
         <activity android:name=".Peticiones" />
+        <activity
+            android:name=".Inicio"
+            android:label="@string/title_activity_inicio" />
+        <activity android:name=".ListadoLibros"></activity>
     </application>
 
 </manifest>
