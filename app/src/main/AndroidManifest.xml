@@ -18,12 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Listar" />
-        <activity android:name=".Peticiones" />
         <activity
             android:name=".Inicio"
             android:label="@string/title_activity_inicio" />
-        <activity android:name=".ListadoLibros"></activity>
+        <activity android:name=".ListadoLibros" />
+        <activity android:name=".DetalleLibro"></activity>
     </application>
 
 </manifest>

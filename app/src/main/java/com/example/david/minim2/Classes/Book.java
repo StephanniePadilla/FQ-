@@ -92,4 +92,44 @@ public class Book {
     public void set_id(String _id) {
         this._id = _id;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getPublisher() {
+        return publisher;
+    }
+
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    public ArrayList<Coments> getListaComents() {
+        return listaComents;
+    }
+
+    public void setListaComents(ArrayList<Coments> listaComents) {
+        this.listaComents = listaComents;
+    }
 }

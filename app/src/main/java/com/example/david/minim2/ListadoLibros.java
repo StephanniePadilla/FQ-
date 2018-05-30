@@ -9,7 +9,6 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.david.minim2.Classes.Book;
-import com.example.david.minim2.Classes.Instituto;
 
 import java.util.List;
 

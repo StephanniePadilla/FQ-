@@ -1,12 +1,10 @@
 package com.example.david.minim2;
 
 import com.example.david.minim2.Classes.Book;
-import com.example.david.minim2.Classes.Instituto;
 
 import org.json.JSONObject;
 
 import java.util.List;
-import java.util.Queue;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -32,8 +30,5 @@ public interface TrackApi {
 
     @DELETE("/books/{id}")
     Call<Book> borraBook(@Path("id") String _id);
-
-   @GET("json/listarInstitutos")
-   Call<List<Instituto>> listarInstitutos();
 
 }
