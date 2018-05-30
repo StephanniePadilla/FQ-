@@ -2,7 +2,9 @@ package com.example.david.minim2;
 
 import com.example.david.minim2.Classes.Alumno;
 import com.example.david.minim2.Classes.Expressio;
+import com.example.david.minim2.Classes.Instituto;
 
+import java.util.List;
 import java.util.Queue;
 
 import retrofit2.Call;
@@ -23,6 +25,8 @@ public interface TrackApi {
     @POST("json/realizarOperacion/{user}")
     Call<Response> realizarOperacion (@Path("user") String user, @Body Queue<Expressio> llistaExpressions);
 
+    @GET("json/listarInstitutos")
+    Call<List<Instituto>> listarInstitutos();
 
 
 

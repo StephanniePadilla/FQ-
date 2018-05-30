@@ -20,10 +20,12 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
+    //public static final String BASE_URL = "http://192.168.42.158:8080/myapp/";
     public static final String BASE_URL = "http://147.83.7.206:8080/myapp/";
     //public static final String BASE_URL ="http://localhost:8080/myapp/";
     private TrackApi trackServices;
     String tag = "Events";
+
     EditText txtuser,txtpassword;
 
     ProgressBar pb1;
@@ -55,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         String user = txtuser.getText().toString();
         final String insti = txtpassword.getText().toString();
+
         callAlum = trackServices.consultarAlumno(user);
         callAlum.enqueue(new Callback<Alumno>() {
 
@@ -75,17 +78,21 @@ public class MainActivity extends AppCompatActivity {
                         Intent intentOj = new Intent(MainActivity.this, Peticiones.class);
                         startActivity(intentOj);
                     } else{
+                        //al final de la tasca
+                        pb1.setVisibility(ProgressBar.INVISIBLE);
                         Log.d("onResponse", "onResponse. Code" + Integer.toString(statusCode));
                         Toast.makeText (MainActivity.this,"Alumno/Insti erroneos",Toast.LENGTH_LONG).show();
                     }
 
-                } else {
+                }
+                else {
                     //al final de la tasca
                     pb1.setVisibility(ProgressBar.INVISIBLE);
                     Log.d("onResponse", "onResponse. Code" + Integer.toString(statusCode));
                     Toast.makeText (MainActivity.this,"Alumno/Insti erroneos",Toast.LENGTH_LONG).show();
                 }
             }
+
 
             @Override
             public void onFailure(Call<Alumno> call, Throwable t) {
